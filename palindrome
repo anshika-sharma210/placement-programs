@@ -1,0 +1,40 @@
+package palindromenumber;
+//ulta shidha ek saman Ex  n=525 Z= 525 reverse 525
+import java.util.Scanner;
+public class palindrome {
+
+	public static void main(String[] args) {
+	Scanner Sc = new Scanner(System.in);
+	int n = Sc.nextInt();
+	int n = 525, rev = 0, z;
+	z=n;
+//	rev = (rev*10)+n%10;
+	// n= 525, z= 525,
+	//rev = (0*10)+n%10;
+	//(0)+5
+	//rev =5
+	//rev = (rev*10)+n%10;
+	//rev = (5*10)+2;
+	//rev = 50+2;
+    //rev = 52;
+   // rev = (52*10)+5;
+   // rev = (520)+5;
+    //rev = 525;
+    
+	
+	
+	while(n>0)
+		
+	{
+		rev=(rev*10)+n%10;
+	if  (rev == z)
+		System.out.println("palindrome");
+	else
+		System.out.println(" not a palindrome");
+	}
+	
+	
+	
+	}
+
+}
