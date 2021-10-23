@@ -1,0 +1,20 @@
+package Reversethestring;
+import java.util.Scanner; 
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// two methods are used in this program ex Deepak  (1) length() (2)charAt()
+		// length defines the total no chracters in this string o/p=6
+	// charAt(1) one pr jo bhi character h uska output dega Index start hota h 0 se o/p=e
+		// char At btata h ki konsa Element Konsi position pr Exist krta h
+		String name = "deepak";
+		String rev= "";
+     int  leng = name.length();
+     for(int i = leng-1; i>=0; i--)
+	{
+	 rev = rev+name.charAt(i);
+	
+	System.out.println("Reverse of "+name+"is"+rev);
+	}
+	}
+}
