@@ -1,0 +1,25 @@
+class Bubblesort{
+public static void main(String[] args){
+int[]a = {23,34,25,56,67,78};
+int temp;
+
+for(int i = 0;i<a.length;i++)// for loop kam krta h round ke  liye 
+{
+for(int j=0; j<a.length-1;j++)// for loop yha element ko compare krwane ke liye krwane ke liye use krte h 
+{
+if(a[j]>a[j+1])
+{
+temp = a[j];
+a[j] = a[i];
+a[i] = temp;
+}
+}
+
+for(i=0;i<a.length;i++)
+{
+System.out.println(a[i]+"");
+
+}
+}
+}
+}
